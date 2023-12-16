@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE4E4"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="2in"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:hint="Email or Phone No."
+        android:inputType="textPersonName"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="2in"
+        android:layout_height="50dp"
+        android:layout_below="@id/t1"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:layout_centerInParent="true"
+        android:text="Sign UP"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerInParent="true"
+        android:text="Already User"
+        android:onClick="tv"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1.5in"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/nielit" />
+
+
+</RelativeLayout>
